@@ -9,6 +9,9 @@ from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest, StockLatestQuoteRequest
 from alpaca.data.timeframe import TimeFrame
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Initialize FastMCP server
 mcp = FastMCP("alpaca-trading")
 
